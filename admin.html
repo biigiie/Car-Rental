@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel | SpeedyCar Rentals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f1f3f5;
+    }
+    .sidebar {
+      height: 100vh;
+      background-color: #212529;
+      padding-top: 20px;
+    }
+    .sidebar .nav-link {
+      color: #ced4da;
+    }
+    .sidebar .nav-link.active, .sidebar .nav-link:hover {
+      background-color: #343a40;
+      color: #fff;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .section-title {
+      font-weight: bold;
+      color: #495057;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="admin.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fleet.html">Fleet Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="index.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="col-md-10 ms-sm-auto px-md-4 py-4">
+      <h2 class="section-title mb-4">Admin Dashboard</h2>
+
+      <!-- Summary Cards -->
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <div class="card p-3 text-center">
+            <h5>Total Bookings</h5>
+            <h3 class="text-primary">154</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 text-center">
+            <h5>Active Rentals</h5>
+            <h3 class="text-success">23</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 text-center">
+            <h5>Registered Users</h5>
+            <h3 class="text-info">91</h3>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3 text-center">
+            <h5>Fleet Size</h5>
+            <h3 class="text-warning">36</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage Bookings -->
+      <div class="card p-4 mb-4">
+        <h5 class="section-title">Recent Bookings</h5>
+        <table class="table table-striped mt-3">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>User</th>
+              <th>Car</th>
+              <th>Pickup Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00124</td>
+              <td>John Doe</td>
+              <td>BMW X7</td>
+              <td>Apr 25, 2025</td>
+              <td><span class="badge bg-warning">Pending</span></td>
+              <td>
+                <button class="btn btn-sm btn-success">Approve</button>
+                <button class="btn btn-sm btn-danger">Decline</button>
+              </td>
+            </tr>
+            <tr>
+              <td>00125</td>
+              <td>Jane Smith</td>
+              <td>Mercedes S-Class</td>
+              <td>Apr 26, 2025</td>
+              <td><span class="badge bg-success">Confirmed</span></td>
+              <td>
+                <button class="btn btn-sm btn-outline-secondary">Modify</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Manage Users -->
+      <div class="card p-4 mb-4">
+        <h5 class="section-title">Registered Users</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Michael Lee (michael@example.com)</span>
+            <button class="btn btn-sm btn-outline-danger">Remove</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Sandra White (sandra@example.com)</span>
+            <button class="btn btn-sm btn-outline-danger">Remove</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Fleet Access -->
+      <div class="card p-4">
+        <h5 class="section-title">Fleet Overview</h5>
+        <p>View and manage all vehicles in the rental fleet.</p>
+        <a href="fleet.html" class="btn btn-primary">Manage Fleet</a>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

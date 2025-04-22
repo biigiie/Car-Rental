@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Confirmation | SpeedyCar Rentals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .confirmation-card {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .check-icon {
+      font-size: 4rem;
+      color: #28a745;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">SpeedyCar Rentals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="rent.html">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="luxury.html">Luxury</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Booking Confirmation -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card confirmation-card p-4 text-center">
+          <div class="check-icon mb-3">
+            ✅
+          </div>
+          <h2 class="mb-3 text-success">Booking Confirmed!</h2>
+          <p class="lead">Thank you for choosing <strong>SpeedyCar Rentals</strong>. Your luxury vehicle is reserved.</p>
+          <p class="text-muted">A confirmation email has been sent to your registered email address. Please arrive at our rental location at least 15 minutes prior to your scheduled pickup time.</p>
+          <hr />
+          <h5 class="text-start mt-4">What’s Next?</h5>
+          <ul class="text-start">
+            <li>📧 Check your email for rental details and receipt.</li>
+            <li>🧾 Bring a valid driver's license and ID when picking up the car.</li>
+            <li>⏱️ Arrive on time to avoid delays.</li>
+            <li>📞 Need to modify your booking? <a href="contact.html">Contact us</a>.</li>
+          </ul>
+          <div class="mt-4">
+            <a href="index.html" class="btn btn-outline-primary">Back to Home</a>
+            <a href="rent.html" class="btn btn-primary ms-2">Rent Another Car</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container text-center">
+      <p>&copy; 2025 SpeedyCar Rentals. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
