@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Car</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">Add a Car</h4>
+            </div>
+            <div class="card-body">
+              <form id="carForm" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label class="form-label">Image</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    name="image"
+                    accept="image/*"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Car Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="title"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Description</label>
+                  <textarea
+                    class="form-control"
+                    name="description"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Seats</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="seats"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Fuel Economy (MPG)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="fuelEconomy"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Price per Day</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="price"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Transmission</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="transmission"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Features (comma-separated)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="features"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">View Options URL</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="viewUrl"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Category</label>
+                  <select class="form-select" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="suv">SUV</option>
+                    <option value="economy">Economy</option>
+                  </select>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary fw-bold">
+                    Save Car
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../scripts/carForm.js"></script>
+  </body>
+</html>
