@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SpeedyCar Rentals</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedyCar Rentals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">SpeedyCar Rentals</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,80 +29,98 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
-  <!-- Carousel Section -->
-  <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/car1.jpg" class="d-block w-100" alt="Luxury Car">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Luxury Cars for Every Occasion</h5>
-          <p>Ride in style and comfort.</p>
+    <div id="navbar-placeholder"></div>
+
+    <!-- Carousel Section -->
+    <div id="carCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/car1.jpg" class="d-block w-100" alt="Luxury Car" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Luxury Cars for Every Occasion</h5>
+            <p>Ride in style and comfort.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/suv1.jpg" class="d-block w-100" alt="SUV Rental" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Reliable SUVs for Your Family</h5>
+            <p>Spacious, powerful and road-trip ready.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/suv3.jpg" class="d-block w-100" alt="Economy Car" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Economy Cars for Smart Travelers</h5>
+            <p>Fuel-efficient and budget-friendly rentals.</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/suv1.jpg" class="d-block w-100" alt="SUV Rental">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Reliable SUVs for Your Family</h5>
-          <p>Spacious, powerful and road-trip ready.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/suv3.jpg" class="d-block w-100" alt="Economy Car" />
-        <div class="carousel-caption d-none d-md-block" >
-          <h5>Economy Cars for Smart Travelers</h5>
-          <p>Fuel-efficient and budget-friendly rentals.</p>
-        </div>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <!-- Services Section -->
-  <section class="container py-5">
-    <h2 class="text-center mb-4">Our Services</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Daily Rentals</h5>
-            <p class="card-text">Flexible and affordable daily rates for your convenience.</p>
+    <!-- Services Section -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Daily Rentals</h5>
+              <p class="card-text">
+                Flexible and affordable daily rates for your convenience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Weekly Packages</h5>
+              <p class="card-text">
+                Great discounts on weekly car rentals. Perfect for vacations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Airport Pickup</h5>
+              <p class="card-text">
+                Convenient car rentals from the airport to your destination.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Weekly Packages</h5>
-            <p class="card-text">Great discounts on weekly car rentals. Perfect for vacations.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Airport Pickup</h5>
-            <p class="card-text">Convenient car rentals from the airport to your destination.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 SpeedyCar Rentals. All rights reserved.</p>
-  </footer>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 SpeedyCar Rentals. All rights reserved.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./common/loadNavbar.js"></script>
+  </body>
 </html>
-

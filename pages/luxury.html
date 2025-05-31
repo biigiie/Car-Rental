@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Cars - SpeedyCar Rentals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Luxury Cars - SpeedyCar Rentals</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
+      .card-img-top {
+        object-fit: cover;
+        height: 220px;
+      }
 
-    .card-img-top {
-      object-fit: cover;
-      height: 220px;
-    }
+      .card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
 
-    .card {
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-    }
+      .card:hover {
+        transform: scale(1.02);
+      }
 
-    .card:hover {
-      transform: scale(1.02);
-    }
+      .luxury-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #343a40;
+      }
 
-    .luxury-title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #343a40;
-    }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+      }
 
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 20px 0;
-    }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
 
-    footer p {
-      margin: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">SpeedyCar Rentals</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -66,150 +68,218 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
-  <!-- Page Header -->
-  <div class="container py-5">
-    <h1 class="text-center luxury-title mb-4">Luxury Cars for Rent</h1>
-    <p class="text-center text-muted mb-5">Experience the pinnacle of style, performance, and comfort. Explore our selection of high-end vehicles, perfect for special occasions or business travel.</p>
+    <div id="navbar-placeholder"></div>
 
-    <div class="row g-4">
-      <!-- Car 1 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/mercedes.jpg" class="card-img-top" alt="Mercedes S-Class">
-          <div class="card-body">
-            <h5 class="card-title">Mercedes-Benz S-Class</h5>
-            <p class="card-text">A true icon of modern luxury. Loaded with cutting-edge technology and unparalleled ride comfort.</p>
-            <ul>
-              <li>Seats: 5</li>
-              <li>Transmission: Automatic</li>
-              <li>Fuel Economy: 22 MPG</li>
-              <li>Features: Massaging seats, Panoramic roof, MBUX system</li>
-              <li>Price: $180/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-             <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+    <!-- Page Header -->
+    <div class="container py-5">
+      <h1 class="text-center luxury-title mb-4">Luxury Cars for Rent</h1>
+      <p class="text-center text-muted mb-5">
+        Experience the pinnacle of style, performance, and comfort. Explore our
+        selection of high-end vehicles, perfect for special occasions or
+        business travel.
+      </p>
+
+      <div class="row g-4">
+        <!-- Car 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/mercedes.jpg"
+              class="card-img-top"
+              alt="Mercedes S-Class"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mercedes-Benz S-Class</h5>
+              <p class="card-text">
+                A true icon of modern luxury. Loaded with cutting-edge
+                technology and unparalleled ride comfort.
+              </p>
+              <ul>
+                <li>Seats: 5</li>
+                <li>Transmission: Automatic</li>
+                <li>Fuel Economy: 22 MPG</li>
+                <li>Features: Massaging seats, Panoramic roof, MBUX system</li>
+                <li>Price: $180/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
-  
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Car 2 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/bmw7.jpg" class="card-img-top" alt="BMW 7 Series">
-          <div class="card-body">
-            <h5 class="card-title">BMW 7 Series</h5>
-            <p class="card-text">Sporty sophistication with top-tier comfort. Advanced handling and driver assistance features.</p>
-            <ul>
-              <li>Seats: 5</li>
-              <li>Transmission: Automatic</li>
-              <li>Fuel Economy: 24 MPG</li>
-              <li>Features: Gesture control, Ambient lighting, Adaptive suspension</li>
-              <li>Price: $175/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-                <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+        <!-- Car 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../img/bmw7.jpg" class="card-img-top" alt="BMW 7 Series" />
+            <div class="card-body">
+              <h5 class="card-title">BMW 7 Series</h5>
+              <p class="card-text">
+                Sporty sophistication with top-tier comfort. Advanced handling
+                and driver assistance features.
+              </p>
+              <ul>
+                <li>Seats: 5</li>
+                <li>Transmission: Automatic</li>
+                <li>Fuel Economy: 24 MPG</li>
+                <li>
+                  Features: Gesture control, Ambient lighting, Adaptive
+                  suspension
+                </li>
+                <li>Price: $175/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Car 3 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/audiA8.jpg" class="card-img-top" alt="Audi A8">
-          <div class="card-body">
-            <h5 class="card-title">Audi A8</h5>
-            <p class="card-text">Where luxury meets innovation. The A8 is refined and spacious with intuitive controls.</p>
-            <ul>
-              <li>Seats: 5</li>
-              <li>Transmission: Automatic</li>
-              <li>Fuel Economy: 21 MPG</li>
-              <li>Features: Virtual cockpit, Night vision, Air suspension</li>
-              <li>Price: $170/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-                <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+        <!-- Car 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../img/audiA8.jpg" class="card-img-top" alt="Audi A8" />
+            <div class="card-body">
+              <h5 class="card-title">Audi A8</h5>
+              <p class="card-text">
+                Where luxury meets innovation. The A8 is refined and spacious
+                with intuitive controls.
+              </p>
+              <ul>
+                <li>Seats: 5</li>
+                <li>Transmission: Automatic</li>
+                <li>Fuel Economy: 21 MPG</li>
+                <li>Features: Virtual cockpit, Night vision, Air suspension</li>
+                <li>Price: $170/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Car 4 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lexusls.jpg" class="card-img-top" alt="Lexus LS">
-          <div class="card-body">
-            <h5 class="card-title">Lexus LS 500</h5>
-            <p class="card-text">Elegant, smooth, and ultra-quiet. Designed for passengers who enjoy a soft, refined ride.</p>
-            <ul>
-              <li>Seats: 5</li>
-              <li>Transmission: Automatic</li>
-              <li>Fuel Economy: 23 MPG</li>
-              <li>Features: Mark Levinson Audio, Reclining rear seats, Lane assist</li>
-              <li>Price: $160/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-                <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+        <!-- Car 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../img/lexusls.jpg" class="card-img-top" alt="Lexus LS" />
+            <div class="card-body">
+              <h5 class="card-title">Lexus LS 500</h5>
+              <p class="card-text">
+                Elegant, smooth, and ultra-quiet. Designed for passengers who
+                enjoy a soft, refined ride.
+              </p>
+              <ul>
+                <li>Seats: 5</li>
+                <li>Transmission: Automatic</li>
+                <li>Fuel Economy: 23 MPG</li>
+                <li>
+                  Features: Mark Levinson Audio, Reclining rear seats, Lane
+                  assist
+                </li>
+                <li>Price: $160/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Car 5 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/porsche.jpg" class="card-img-top" alt="Porsche Panamera">
-          <div class="card-body">
-            <h5 class="card-title">Porsche Panamera</h5>
-            <p class="card-text">For those who want performance with luxury. Powerful acceleration with a driver-focused interior.</p>
-            <ul>
-              <li>Seats: 4</li>
-              <li>Transmission: Automatic</li>
-              <li>Fuel Economy: 20 MPG</li>
-              <li>Features: Sport Chrono, Bose Audio, Adaptive cruise</li>
-              <li>Price: $220/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-                <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+        <!-- Car 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/porsche.jpg"
+              class="card-img-top"
+              alt="Porsche Panamera"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Porsche Panamera</h5>
+              <p class="card-text">
+                For those who want performance with luxury. Powerful
+                acceleration with a driver-focused interior.
+              </p>
+              <ul>
+                <li>Seats: 4</li>
+                <li>Transmission: Automatic</li>
+                <li>Fuel Economy: 20 MPG</li>
+                <li>Features: Sport Chrono, Bose Audio, Adaptive cruise</li>
+                <li>Price: $220/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Car 6 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/Tesla.jpg" class="card-img-top" alt="Tesla Model S Plaid">
-          <div class="card-body">
-            <h5 class="card-title">Tesla Model S Plaid</h5>
-            <p class="card-text">Electric luxury with insane acceleration. Futuristic design with a clean and spacious cabin.</p>
-            <ul>
-              <li>Seats: 5</li>
-              <li>Transmission: Single-Speed</li>
-              <li>Range: 390+ miles</li>
-              <li>Features: Full Self Driving, 17" Touchscreen, HEPA filtration</li>
-              <li>Price: $210/day</li>
-            </ul>
-            <div class="d-grid mt-3">
-                <a href="/pages/confirmation.html" class="btn btn-primary fw-bold">Rent Now</a>
+        <!-- Car 6 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/Tesla.jpg"
+              class="card-img-top"
+              alt="Tesla Model S Plaid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tesla Model S Plaid</h5>
+              <p class="card-text">
+                Electric luxury with insane acceleration. Futuristic design with
+                a clean and spacious cabin.
+              </p>
+              <ul>
+                <li>Seats: 5</li>
+                <li>Transmission: Single-Speed</li>
+                <li>Range: 390+ miles</li>
+                <li>
+                  Features: Full Self Driving, 17" Touchscreen, HEPA filtration
+                </li>
+                <li>Price: $210/day</li>
+              </ul>
+              <div class="d-grid mt-3">
+                <a
+                  href="/pages/confirmation.html"
+                  class="btn btn-primary fw-bold"
+                  >Rent Now</a
+                >
               </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="mt-5">
-    <div class="container text-center">
-      <p>&copy; 2025 SpeedyCar Rentals. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="container text-center">
+        <p>&copy; 2025 SpeedyCar Rentals. All rights reserved.</p>
+      </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../common/loadNavbar.js"></script>
+  </body>
 </html>

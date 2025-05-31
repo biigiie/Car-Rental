@@ -37,6 +37,11 @@ document
 
       console.log(data);
 
+      localStorage.setItem("idToken", data.idToken);
+      localStorage.setItem("refreshToken", data.refreshToken);
+      localStorage.setItem("localId", data.localId);
+      localStorage.setItem("tokenExpiresIn", data.expiresIn);
+
       // Handle successful registration (e.g., redirect or show success message)
       alert("Registration successful!");
       window.location.href = "dashboard.html"; // change this to your desired location

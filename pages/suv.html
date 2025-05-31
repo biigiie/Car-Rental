@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SUV Rentals | SpeedyCar Rentals</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .navbar-brand {
-      font-weight: bold;
-    }
-    .card {
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-    .btn-rent {
-      font-size: 1rem;
-      font-weight: bold;
-      width: 100%;
-    }
-    .section-title {
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-  </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUV Rentals | SpeedyCar Rentals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar-brand {
+        font-weight: bold;
+      }
+      .card {
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .btn-rent {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+      }
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">SpeedyCar Rentals</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
@@ -51,123 +53,176 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
-<!-- Page Header -->
-<div class="container py-5">
-  <h2 class="text-center section-title">Available SUV Rentals</h2>
+    <div id="navbar-placeholder"></div>
 
-  <div class="row g-4">
-    <!-- SUV Card 1 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/highlander.jpg" class="card-img-top" alt="Toyota Highlander">
-        <div class="card-body">
-          <h5 class="card-title">Toyota Highlander 2022</h5>
-          <p class="card-text">A reliable mid-size SUV with 3-row seating, ideal for families and long trips.</p>
-          <ul>
-            <li>7-Passenger Seating</li>
-            <li>All-Wheel Drive</li>
-            <li>Blind Spot Monitoring</li>
-          </ul>
-          <p class="text-success fw-bold">$95 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
+    <!-- Page Header -->
+    <div class="container py-5">
+      <h2 class="text-center section-title">Available SUV Rentals</h2>
+
+      <div class="row g-4">
+        <!-- SUV Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/highlander.jpg"
+              class="card-img-top"
+              alt="Toyota Highlander"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Toyota Highlander 2022</h5>
+              <p class="card-text">
+                A reliable mid-size SUV with 3-row seating, ideal for families
+                and long trips.
+              </p>
+              <ul>
+                <li>7-Passenger Seating</li>
+                <li>All-Wheel Drive</li>
+                <li>Blind Spot Monitoring</li>
+              </ul>
+              <p class="text-success fw-bold">$95 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/explorer.jpeg"
+              class="card-img-top"
+              alt="Ford Explorer"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ford Explorer 2023</h5>
+              <p class="card-text">
+                Spacious and powerful SUV with premium features and modern
+                safety tech.
+              </p>
+              <ul>
+                <li>3.0L EcoBoost V6</li>
+                <li>Touchscreen Infotainment</li>
+                <li>Heated Seats</li>
+              </ul>
+              <p class="text-success fw-bold">$110 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/tahoe.jpg"
+              class="card-img-top"
+              alt="Chevrolet Tahoe"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chevrolet Tahoe 2022</h5>
+              <p class="card-text">
+                Full-size SUV with luxury interior, great towing capacity and
+                ample cargo room.
+              </p>
+              <ul>
+                <li>V8 Engine</li>
+                <li>Rear Seat Entertainment</li>
+                <li>8,400 lbs Towing</li>
+              </ul>
+              <p class="text-success fw-bold">$130 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV Card 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../img/pilot.jpg" class="card-img-top" alt="Honda Pilot" />
+            <div class="card-body">
+              <h5 class="card-title">Honda Pilot 2021</h5>
+              <p class="card-text">
+                Comfortable ride and top-rated safety features make this a great
+                road-trip SUV.
+              </p>
+              <ul>
+                <li>8 Seats</li>
+                <li>Adaptive Cruise Control</li>
+                <li>Backup Camera</li>
+              </ul>
+              <p class="text-success fw-bold">$90 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV Card 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/cherokee.jpg"
+              class="card-img-top"
+              alt="Jeep Grand Cherokee"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jeep Grand Cherokee 2022</h5>
+              <p class="card-text">
+                A rugged SUV that’s perfect for off-road adventures or luxury
+                city drives.
+              </p>
+              <ul>
+                <li>Trail Rated 4x4</li>
+                <li>Panoramic Sunroof</li>
+                <li>Leather Interior</li>
+              </ul>
+              <p class="text-success fw-bold">$105 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SUV Card 6 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/telluride.jpg"
+              class="card-img-top"
+              alt="Kia Telluride"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kia Telluride 2023</h5>
+              <p class="card-text">
+                Award-winning SUV offering luxury comfort and spacious third-row
+                seating.
+              </p>
+              <ul>
+                <li>Apple CarPlay & Android Auto</li>
+                <li>Lane Keep Assist</li>
+                <li>Tri-zone Climate Control</li>
+              </ul>
+              <p class="text-success fw-bold">$100 / day</p>
+              <a href="confirmation.html" class="btn btn-primary btn-rent"
+                >Rent Now</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SUV Card 2 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/explorer.jpeg" class="card-img-top" alt="Ford Explorer">
-        <div class="card-body">
-          <h5 class="card-title">Ford Explorer 2023</h5>
-          <p class="card-text">Spacious and powerful SUV with premium features and modern safety tech.</p>
-          <ul>
-            <li>3.0L EcoBoost V6</li>
-            <li>Touchscreen Infotainment</li>
-            <li>Heated Seats</li>
-          </ul>
-          <p class="text-success fw-bold">$110 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUV Card 3 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/tahoe.jpg" class="card-img-top" alt="Chevrolet Tahoe">
-        <div class="card-body">
-          <h5 class="card-title">Chevrolet Tahoe 2022</h5>
-          <p class="card-text">Full-size SUV with luxury interior, great towing capacity and ample cargo room.</p>
-          <ul>
-            <li>V8 Engine</li>
-            <li>Rear Seat Entertainment</li>
-            <li>8,400 lbs Towing</li>
-          </ul>
-          <p class="text-success fw-bold">$130 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUV Card 4 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/pilot.jpg" class="card-img-top" alt="Honda Pilot">
-        <div class="card-body">
-          <h5 class="card-title">Honda Pilot 2021</h5>
-          <p class="card-text">Comfortable ride and top-rated safety features make this a great road-trip SUV.</p>
-          <ul>
-            <li>8 Seats</li>
-            <li>Adaptive Cruise Control</li>
-            <li>Backup Camera</li>
-          </ul>
-          <p class="text-success fw-bold">$90 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUV Card 5 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/cherokee.jpg" class="card-img-top" alt="Jeep Grand Cherokee">
-        <div class="card-body">
-          <h5 class="card-title">Jeep Grand Cherokee 2022</h5>
-          <p class="card-text">A rugged SUV that’s perfect for off-road adventures or luxury city drives.</p>
-          <ul>
-            <li>Trail Rated 4x4</li>
-            <li>Panoramic Sunroof</li>
-            <li>Leather Interior</li>
-          </ul>
-          <p class="text-success fw-bold">$105 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUV Card 6 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/telluride.jpg" class="card-img-top" alt="Kia Telluride">
-        <div class="card-body">
-          <h5 class="card-title">Kia Telluride 2023</h5>
-          <p class="card-text">Award-winning SUV offering luxury comfort and spacious third-row seating.</p>
-          <ul>
-            <li>Apple CarPlay & Android Auto</li>
-            <li>Lane Keep Assist</li>
-            <li>Tri-zone Climate Control</li>
-          </ul>
-          <p class="text-success fw-bold">$100 / day</p>
-          <a href="confirmation.html" class="btn btn-primary btn-rent">Rent Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../common/loadNavbar.js"></script>
+  </body>
 </html>

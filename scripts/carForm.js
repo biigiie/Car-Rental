@@ -41,7 +41,7 @@ form.addEventListener("submit", async (e) => {
       .split(",")
       .map((f) => f.trim())
       .filter((f) => f.length > 0);
-    const viewUrl = form.viewUrl.value.trim();
+    // const viewUrl = form.viewUrl.value.trim();
     const category = form.category.value;
 
     if (
@@ -52,7 +52,6 @@ form.addEventListener("submit", async (e) => {
       isNaN(price) ||
       !transmission ||
       features.length === 0 ||
-      !viewUrl ||
       !category
     ) {
       alert("Please fill in all required fields correctly.");
@@ -68,7 +67,6 @@ form.addEventListener("submit", async (e) => {
       price,
       transmission,
       features,
-      viewUrl,
       category,
     };
 
