@@ -50,8 +50,8 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- Sidebar -->
-        <nav class="col-md-2 d-md-block sidebar">
+        <!-- Static Sidebar for Desktop -->
+        <nav class="col-md-2 d-none d-md-block sidebar">
           <div class="position-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -76,10 +76,63 @@
           </div>
         </nav>
 
+        <!-- Offcanvas Sidebar for Mobile -->
+        <div
+          class="offcanvas offcanvas-start text-bg-dark d-md-none"
+          tabindex="-1"
+          id="sidebar"
+          aria-labelledby="sidebarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rent.html">Rent a Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">My Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Edit Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="logout.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Main content -->
         <main class="col-md-10 ms-sm-auto px-md-4">
+          <!-- Mobile Toggle Button -->
+          <button
+            class="btn btn-primary d-md-none mt-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="sidebar"
+          >
+            ☰ Menu
+          </button>
+
           <div class="dashboard-header mb-4 mt-3">
-            <h2>Welcome back, <span id="user-name" class="text-primary">User!</span></h2>
+            <h2>
+              Welcome back, <span id="user-name" class="text-primary">User!</span>
+            </h2>
             <p class="welcome-message">
               Here's what's going on with your account today.
             </p>
@@ -93,9 +146,7 @@
                 <p><strong>Car:</strong> Mercedes-Benz S-Class</p>
                 <p><strong>Pickup:</strong> April 28, 2025 – 10:00 AM</p>
                 <p><strong>Return:</strong> May 1, 2025 – 4:00 PM</p>
-                <a href="booking.html" class="btn btn-sm btn-outline-secondary"
-                  >View Details</a
-                >
+                <a href="booking.html" class="btn btn-sm btn-outline-secondary">View Details</a>
                 <button class="btn btn-sm btn-danger ms-2">Cancel</button>
               </div>
             </div>
@@ -108,9 +159,7 @@
                   <li>✅ BMW 7 Series (Mar 3–5, 2025)</li>
                   <li>✅ Audi A8 (Feb 15–18, 2025)</li>
                 </ul>
-                <a href="#" class="btn btn-sm btn-outline-primary"
-                  >View Full History</a
-                >
+                <a href="#" class="btn btn-sm btn-outline-primary">View Full History</a>
               </div>
             </div>
 
@@ -118,18 +167,10 @@
             <div class="col-md-6">
               <div class="card p-4">
                 <h5>My Profile</h5>
-                <p>
-                  <strong>Name:</strong>
-                  <span id="profile-name">Loading...</span>
-                </p>
-                <p>
-                  <strong>Email:</strong>
-                  <span id="profile-email">Loading...</span>
-                </p>
+                <p><strong>Name:</strong> <span id="profile-name">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="profile-email">Loading...</span></p>
                 <p><strong>License:</strong> Verified ✅</p>
-                <a href="#" class="btn btn-sm btn-outline-success"
-                  >Edit Profile</a
-                >
+                <a href="#" class="btn btn-sm btn-outline-success">Edit Profile</a>
               </div>
             </div>
 
@@ -138,19 +179,11 @@
               <div class="card p-4">
                 <h5>Messages & Alerts</h5>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    📢 10% off for weekend rentals!
-                  </li>
-                  <li class="list-group-item">
-                    🚗 Your car is ready for pickup on April 28.
-                  </li>
-                  <li class="list-group-item">
-                    🎉 You’ve earned a loyalty point!
-                  </li>
+                  <li class="list-group-item">📢 10% off for weekend rentals!</li>
+                  <li class="list-group-item">🚗 Your car is ready for pickup on April 28.</li>
+                  <li class="list-group-item">🎉 You’ve earned a loyalty point!</li>
                 </ul>
-                <a href="contact.html" class="btn btn-sm btn-outline-info mt-3"
-                  >Contact Support</a
-                >
+                <a href="contact.html" class="btn btn-sm btn-outline-info mt-3">Contact Support</a>
               </div>
             </div>
           </div>
