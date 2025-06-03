@@ -54,22 +54,6 @@ document
         cvv: cardData.cvv,
       }),
     };
-    // new FormData();
-    // formData.append("carId", selectedCar.id);
-    // formData.append("color", color);
-    // formData.append("fuelType", fuelType);
-    // formData.append("modelYear", modelYear);
-    // formData.append("specialRequests", specialRequests);
-    // formData.append("paymentMethod", paymentMethod);
-    // formData.append("startDate", startDate);
-    // formData.append("endDate", endDate);
-
-    // if (cardData) {
-    //   formData.append("cardName", cardData.cardName);
-    //   formData.append("cardNumber", cardData.cardNumber);
-    //   formData.append("expiry", cardData.expiry);
-    //   formData.append("cvv", cardData.cvv);
-    // }
 
     try {
       console.log(formData);
