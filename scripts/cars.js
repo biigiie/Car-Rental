@@ -39,10 +39,17 @@ document.addEventListener("DOMContentLoaded", async () => {
                 ${featuresList}
               </ul>
               <p class="text-success fw-bold mt-auto">$${car.price} / day</p>
-              <a href="confirmation.html" class="btn btn-primary btn-rent mt-2">Rent Now</a>
+              <a href="#" class="btn btn-primary btn-rent mt-2" data-id="${car.id}">Rent Now</a>
             </div>
           </div>
         `;
+
+      const rentBtn = card.querySelector(".btn-rent");
+      rentBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.setItem("selectedCar", JSON.stringify(car));
+        window.location.href = "confirmation.html";
+      });
 
       suvContainer.appendChild(card);
     });
@@ -91,16 +98,23 @@ document.addEventListener("DOMContentLoaded", async () => {
                 ${featuresList}
               </ul>
               <p class="text-success fw-bold mt-auto">$${car.price} / day</p>
-              <a href="confirmation.html" class="btn btn-primary btn-rent mt-2">Rent Now</a>
+              <a href="#" class="btn btn-primary btn-rent mt-2" data-id="${car.id}">Rent Now</a>
             </div>
           </div>
         `;
 
+      const rentBtn = card.querySelector(".btn-rent");
+      rentBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.setItem("selectedCar", JSON.stringify(car));
+        window.location.href = "confirmation.html";
+      });
+
       luxuryContainer.appendChild(card);
     });
   } catch (err) {
-    console.error("Error loading SUVs:", err);
-    luxuryContainer.innerHTML = `<p class="text-danger text-center">Failed to load SUVs.</p>`;
+    console.error("Error loading Luxuries:", err);
+    luxuryContainer.innerHTML = `<p class="text-danger text-center">Failed to load Luxury Cars.</p>`;
   }
 });
 
@@ -143,15 +157,22 @@ document.addEventListener("DOMContentLoaded", async () => {
                 ${featuresList}
               </ul>
               <p class="text-success fw-bold mt-auto">$${car.price} / day</p>
-              <a href="confirmation.html" class="btn btn-primary btn-rent mt-2">Rent Now</a>
+              <a href="#" class="btn btn-primary btn-rent mt-2" data-id="${car.id}">Rent Now</a>
             </div>
           </div>
         `;
 
+      const rentBtn = card.querySelector(".btn-rent");
+      rentBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.setItem("selectedCar", JSON.stringify(car));
+        window.location.href = "confirmation.html";
+      });
+
       economyContainer.appendChild(card);
     });
   } catch (err) {
-    console.error("Error loading SUVs:", err);
-    economyContainer.innerHTML = `<p class="text-danger text-center">Failed to load SUVs.</p>`;
+    console.error("Error loading Economies:", err);
+    economyContainer.innerHTML = `<p class="text-danger text-center">Failed to load Economy Cars.</p>`;
   }
 });

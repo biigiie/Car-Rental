@@ -54,25 +54,6 @@
   </head>
   <body>
     <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">SpeedyCar Rentals</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/suv.html">SUVs</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/luxury.html">Luxury</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/economy.html">Economy</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/rent.html">Rent</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="pages/login.html">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
 
     <div id="navbar-placeholder"></div>
 
@@ -95,6 +76,17 @@
               <option>Blue</option>
               <option>Red</option>
             </select>
+          </div>
+
+          <!-- Rental Period -->
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Rental Start Date</label>
+            <input type="date" class="form-control" id="startDate" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="endDate" class="form-label">Rental End Date</label>
+            <input type="date" class="form-control" id="endDate" required />
           </div>
 
           <!-- Fuel Type -->
@@ -136,7 +128,7 @@
           </div>
 
           <!-- ID Upload -->
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <label for="idType" class="form-label"
               >Form of Identification</label
             >
@@ -157,7 +149,7 @@
               accept=".jpg,.jpeg,.png,.pdf"
               required
             />
-          </div>
+          </div> -->
 
           <!-- Special Requests -->
           <div class="mb-3">
@@ -277,15 +269,16 @@
         });
       });
 
-      document
-        .getElementById("bookingForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "✅ Booking and Payment Confirmed! You will receive an email shortly."
-          );
-          window.location.href = "index.html";
-        });
+      // document
+      //   .getElementById("bookingForm")
+      //   .addEventListener("submit", function (e) {
+      //     e.preventDefault();
+      //     alert(
+      //       "✅ Booking and Payment Confirmed! You will receive an email shortly."
+      //     );
+      //     window.location.href = "index.html";
+      //   });
     </script>
+    <script type="module" src="../scripts/confirmation.js"></script>
   </body>
 </html>
