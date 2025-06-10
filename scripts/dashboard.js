@@ -19,6 +19,7 @@ async function fetchProfile() {
       },
     });
 
+    console.log("Response:", response);
     if (!response.ok) {
       throw new Error("Failed to fetch profile");
     }
