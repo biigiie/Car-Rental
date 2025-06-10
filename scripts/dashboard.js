@@ -98,16 +98,28 @@ function renderRentals(type, rentals) {
             <strong>To:</strong> ${new Date(
               rental.endDate
             ).toLocaleDateString()}
+            ${
+              rental.status === "returned"
+                ? `<br><strong>Returned:</strong> ${new Date(
+                    rental.returnedAt
+                  ).toLocaleDateString()}`
+                : rental.status === "cancelled"
+                ? `<br><strong>Cancelled:</strong> ${new Date(
+                    rental.cancelledAt
+                  ).toLocaleDateString()}`
+                : ""
+            }
+
           </p>
           
         </div>
         <div class="card-footer bg-transparent border-top-0 text-end">
           ${
             type === "current"
-              ? `<button class="btn btn-warning btn-sm" onclick="returnRental('${rental.id}')">Return Car</button>`
+              ? `<button class="btn btn-warning btn-sm" onclick="returnRental('${rental.id}','${rental.carId}')">Return Car</button>`
               : type === "future"
-              ? `<button class="btn btn-danger btn-sm" onclick="cancelRental('${rental.id}')">Cancel Booking</button>`
-              : `<span class="badge bg-secondary">Completed</span>`
+              ? `<button class="btn btn-danger btn-sm" onclick="cancelRental('${rental.id}','${rental.carId}')">Cancel Booking</button>`
+              : `<span class="badge bg-secondary">${rental.status}</span>`
           }
         </div>
       </div>
@@ -150,17 +162,19 @@ function renderRentals(type, rentals) {
 // }
 
 // Sample button handlers (to be implemented)
-window.returnRental = async function (rentalId) {
+window.returnRental = async function (rentalId, carId) {
   if (!confirm("Are you sure you want to return this car?")) return;
-
+  console.log(`Returning rental ${rentalId} for car ${carId}`);
   try {
     const response = await fetchWithAuth(
-      `${backendURL}/api/cars/rentals/${rentalId}/return`,
+      `${backendURL}/api/cars/rentals/return`,
       {
         method: "POST",
         headers: {
+          "content-Type": "application/json",
           Authorization: `Bearer ${idToken}`,
         },
+        body: JSON.stringify({ rentalId, carId }),
       }
     );
     if (!response.ok) throw new Error("Failed to return rental");
@@ -172,17 +186,19 @@ window.returnRental = async function (rentalId) {
   }
 };
 
-window.cancelRental = async function (rentalId) {
+window.cancelRental = async function (rentalId, carId) {
   if (!confirm("Cancel this upcoming rental?")) return;
-
+  console.log(`Cancelling rental ${rentalId} for car ${carId}`);
   try {
     const response = await fetchWithAuth(
-      `${backendURL}/api/cars/rentals/${rentalId}/cancel`,
+      `${backendURL}/api/cars/rentals/cancel`,
       {
-        method: "DELETE",
+        method: "POST",
         headers: {
+          "Content-Type": "application/json",
           Authorization: `Bearer ${idToken}`,
         },
+        body: JSON.stringify({ rentalId, carId }),
       }
     );
     if (!response.ok) throw new Error("Failed to cancel rental");
